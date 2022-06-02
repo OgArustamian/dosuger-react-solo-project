@@ -1,0 +1,13 @@
+.footer {
+    display: flex;
+    justify-content: flex-start;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: #f60;
+}
+
+.footer-copyright {
+    color: black;
+    margin-left: 20px;
+}

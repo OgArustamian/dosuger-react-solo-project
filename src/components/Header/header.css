@@ -1,0 +1,28 @@
+.header-title {
+    color: black;
+    font-size: 30px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.header-title:hover {
+    color: white;
+}
+
+.header-description {
+    color: white;
+    font-size: 24px;
+}
+
+.header-logo {
+    width: 40px;
+    margin-left: 5px;
+}
+
+.navbar {
+    background-color: #f60;
+}
+
+#navbarHeader {
+    background-color: #f60;
+}

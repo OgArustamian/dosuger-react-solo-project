@@ -1,0 +1,29 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.movie-poster {
+    width: 20%;
+    margin: 0 auto;
+}
+
+.movie-title {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.randomize-btn {
+    background-color: #f60;
+    margin: 0 auto;
+    color: black;
+    border-radius: 5%;
+}
+
+.randomize-btn:hover {
+    color: white;
+}
