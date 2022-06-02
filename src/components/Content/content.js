@@ -8,7 +8,7 @@ function getRandomUrl() {
   return `https://kinopoiskapiunofficial.tech/api/v2.2/films/top?type=TOP_250_BEST_FILMS&page=${randInt}`;
 }
 
-function getRandomMovieIndex() {
+function getRandomIndex() {
   return Math.floor(Math.random() * 20);
 }
 
@@ -24,7 +24,7 @@ function Main() {
       },
     });
     const responseData = await response.json();
-    setMovie(responseData.films[getRandomMovieIndex()]);
+    setMovie(responseData.films[getRandomIndex()]);
   }
 
   return (

@@ -1,22 +1,25 @@
-import React from 'react';
+import React from "react";
+import moviesPosters from "../movies-posters.jpeg";
+import tvShowsPosters from "../tvshows.webp";
 
 const Home = () => {
-    return (
-        <div className="home-container">
-            <a className="card-link" href="/movies">
-                <div className="card">
-                    <img className="card-imamge" src="" />
-                    <p className="card-text">Найти фильм</p>
-                </div>
-            </a>
-            <a className="card-link" href="/tvshows">
-                <div className="card">
-                    <img className="card-imamge" src="" />
-                    <p className="card-text">Найти сериал</p>
-                </div>
-            </a>
-        </div>
-    )
-}
+  return (
+    <div className="home-container">
+      <div className="poster">
+        <p className="poster-text">Найти фильм</p>
+        <a className="poster-link" href="/movies">
+          <img className="poster-image" src={moviesPosters} />
+        </a>
+      </div>
 
-export default Home
+      <div className="poster">
+        <p className="poster-text">Найти ТВ-шоу</p>
+        <a className="poster-link" href="/tvshows">
+          <img className="poster-image" src={tvShowsPosters} />
+        </a>
+      </div>
+    </div>
+  );
+};
+
+export default Home;

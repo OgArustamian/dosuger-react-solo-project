@@ -6,6 +6,7 @@ function BurgerMenu() {
     margin: '0 auto',
     color: 'black',
     marginBottom: '10px',
+    textAlign: 'center',
   }
   
   return (
@@ -13,7 +14,7 @@ function BurgerMenu() {
       <div className="container">
         <div className="row">
           <div className="col-sm-8 col-md-7 py-4">
-            <h4 style={styles}>О приложении</h4>
+            <h4 style={styles}>О сайте</h4>
             <p className="header-description">
               Если вам нечем заняться вечером и вы задумались, какой фильм
               посмотреть, воспользуйтесь чудо рандомайзером.

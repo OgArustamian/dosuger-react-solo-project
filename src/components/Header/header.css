@@ -12,15 +12,21 @@
 .header-description {
     color: white;
     font-size: 24px;
+    text-align: center;
 }
 
-.header-logo {
+.header-logo:first-of-type {
+    width: 52px;
+    margin-right: 5px;
+}
+
+.header-logo:last-of-type {
     width: 40px;
-    margin-left: 5px;
 }
 
 .navbar {
     background-color: #f60;
+    min-height: 5vh;
 }
 
 #navbarHeader {

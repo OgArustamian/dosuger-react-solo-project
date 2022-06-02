@@ -18,3 +18,26 @@ code {
   min-height: 80vh;
   gap: 100px;
 }
+
+.poster-image {
+  width: 500px;
+  height: 300px;
+  display: block;
+  transition: transform 0.5s linear;
+}
+
+.poster-image:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.poster-text {
+  color: white;
+  background-color: #1f1f1f;
+  text-align: center;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.poster-link:hover {
+  opacity: 0.5;
+}

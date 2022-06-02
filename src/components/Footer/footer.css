@@ -1,10 +1,9 @@
 .footer {
     display: flex;
     justify-content: flex-start;
-    position: fixed;
-    bottom: 0;
     width: 100%;
     background-color: #f60;
+    min-height: 5vh;
 }
 
 .footer-copyright {

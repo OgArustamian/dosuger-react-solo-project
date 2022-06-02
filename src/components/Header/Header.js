@@ -13,7 +13,7 @@ function Header() {
             <img className="header-logo" src={chillLogo} alt="logo" />
             <img className="header-logo" src={movieLogo} alt="logo" />
           </div>
-          <a className="header-title" href="/">Dosuger</a>
+          <a className="header-title" href="/">Досугер</a>
           <button
             className="navbar-toggler"
             type="button"
