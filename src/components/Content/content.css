@@ -16,6 +16,7 @@
     font-weight: bold;
     color: white;
     text-align: center;
+    font-size: 20px;
 }
 
 .randomize-btn {
@@ -23,6 +24,7 @@
     margin: 0 auto;
     color: black;
     border-radius: 5%;
+    font-size: 20px;
 }
 
 .randomize-btn:hover {

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./content.css";
 
-const API_KEY = "5c2b8622-1dcc-4e99-92eb-c04e98120af5";
+const API_KEY = "7c27de76-1ce1-4d43-900e-d451e8f5f06b";
 
 function getRandomUrl() {
   const randInt = Math.floor(Math.random() * 12) + 1;
@@ -12,24 +12,46 @@ function getRandomIndex() {
   return Math.floor(Math.random() * 20);
 }
 
+// let i = 0;
+// const resetCounter = () => {
+//   i = 0;
+// };
+
 function Main() {
-  const [movie, setMovie] = useState([]);
+  const [movie, setMovie] = useState({});
 
   async function getRandomMovie() {
-    const response = await fetch(getRandomUrl(), {
-      method: "GET",
-      headers: {
-        "X-API-KEY": API_KEY,
-        "Content-Type": "application/json",
-      },
-    });
-    const responseData = await response.json();
-    setMovie(responseData.films[getRandomIndex()]);
+      const response = await fetch(getRandomUrl(), {
+        method: "GET",
+        headers: {
+          "X-API-KEY": API_KEY,
+          "Content-Type": "application/json",
+        },
+      });
+
+      const responseData = await response.json();
+      setMovie(responseData.films[getRandomIndex()])
+
+    // if (i < 20) {
+    //   setTimeout(() => {
+    //     setMovie(movies[i]);
+    //     i += 1;
+    //   }, 50);
+    // } else {
+    //   setMovie(movies[getRandomIndex()]);
+    // }
   }
+
+  // useEffect(() => {
+  //   if (i != 0) {
+  //     getRandomMovie();
+  //   }
+  // }, [i]);
 
   return (
     <main className="main">
-      <button onClick={getRandomMovie} className="randomize-btn">
+      <button
+        onClick={getRandomMovie} className="randomize-btn">
         подобрать фильм
       </button>
       <img className="movie-poster" src={movie.posterUrl}></img>
