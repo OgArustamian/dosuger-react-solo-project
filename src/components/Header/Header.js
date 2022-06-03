@@ -2,6 +2,7 @@ import BurgerMenu from '../Burger-Menu/BurgerMenu';
 import './header.css';
 import movieLogo from './img/clapperboard-svgrepo-com.svg';
 import chillLogo from './img/man-lying-and-watching-tv-svgrepo-com.svg';
+import { Link } from 'react-router-dom';
 
 function Header() {
   return (
@@ -13,7 +14,7 @@ function Header() {
             <img className="header-logo" src={chillLogo} alt="logo" />
             <img className="header-logo" src={movieLogo} alt="logo" />
           </div>
-          <a className="header-title" href="/">Досугер</a>
+          <Link className="header-title" to="/">Досугер</Link>
           <button
             className="navbar-toggler"
             type="button"

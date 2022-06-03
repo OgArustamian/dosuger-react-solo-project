@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./content.css";
 
-const API_KEY = "7c27de76-1ce1-4d43-900e-d451e8f5f06b";
+const API_KEY = "1c345559-c203-450f-b42e-db640f453da2";
 
 function getRandomUrl() {
   const randInt = Math.floor(Math.random() * 12) + 1;
@@ -19,6 +19,7 @@ function getRandomIndex() {
 
 function Main() {
   const [movie, setMovie] = useState({});
+  const [isLoading, setLoading] = useState(true)
 
   async function getRandomMovie() {
       const response = await fetch(getRandomUrl(), {
@@ -31,7 +32,7 @@ function Main() {
 
       const responseData = await response.json();
       setMovie(responseData.films[getRandomIndex()])
-
+      setLoading(false)
     // if (i < 20) {
     //   setTimeout(() => {
     //     setMovie(movies[i]);
